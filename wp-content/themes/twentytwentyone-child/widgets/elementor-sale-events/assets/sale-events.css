@@ -1,0 +1,41 @@
+.event {
+	display: flex;
+	justify-content: space-between;
+}
+
+.goal {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 50px;
+}
+
+.goal_dot {
+	height: 25px;
+	width: 25px;
+	background-color: #2196F3;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.progress {
+	position: absolute;
+	height: 10px;
+	width: calc(100% - (25px * 2));
+	background-color: #bbb;
+	/* margin: calc((-93px - 10px) / 2) auto 0 auto; */
+	margin-top: calc((-93px - 10px) / 2);
+	left: 50%;
+	transform:translate(-50%);
+}
+
+.progress_line {
+	height: 10px;
+	/* width: 70%; */
+	background-color: #f44336;
+	/* padding: -25px 0 0 0; */
+
+	/* text-align: right; */
+	/* line-height: 10px; */
+	/* color: #f44336; */
+}
